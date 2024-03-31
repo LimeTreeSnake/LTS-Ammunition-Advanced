@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+    <v1.4>
+        <li>/</li>
+        <li>Shared</li>
+        <li>v1.5</li>
+        <li IfModActive="Rimsenal.Spacer">Compatibility/RimsenalSpacer</li>
+    </v1.4>
+    <v1.5>
+        <li>/</li>
+        <li>Shared</li>
+        <li>v1.5</li>
+        <li IfModActive="Rimsenal.Spacer">Compatibility/RimsenalSpacer</li>
+    </v1.5>
+</loadFolders>

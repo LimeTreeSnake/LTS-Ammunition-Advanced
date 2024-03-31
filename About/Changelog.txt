@@ -1,0 +1,55 @@
+[LTS]Ammunition - Extended Ammo
+
+2024-03-29
+    - IMPORTANT NOTICE -
+     
+      First I must apologise for any issues you may have had while using this mod.
+      I had misunderstood the vanilla calculations and their base penetration property meaning.
+      Thus I have readjusted all values for all projectiles so they better match vanilla and the weapons expected results.     
+      
+      So let me explain how this mod will work henceforth for calculations of Armor Piercing and HP rounds contra FMJ.
+      Using my ammo mod now omit the game calculation for Armor penetration depending on Quality due to all bullets having pre set values.
+      What does that mean?
+      This means, Legendary and Masterwork weapons wont have increased ammo penetration nor will Awful weapons have a penalty.
+      The damage bonus however still applies so HP projectiles will deal more damage but will have severely weakened armor penetration as was intended.
+      Also note, the Armor piercing rounds will see a significant boost in penetration now and actually be viable in game.
+      Stopping power have been adjusted as well. So AP, FMJ and HP simply have all their values set and will be very static.
+      
+      The guidelines I used for calculating values are as follows.
+      
+      AP rounds have double penetration, less damage and less stopping power.
+      HP rounds have double stopping power, more damage and less penetration.
+      FMJ have values that are equivalent to their vanilla counterparts.
+      
+      Overall, you'll find that this mod now actually works as was intended and I apologise once again for any and all inconveniences you may have had.
+      
+      Thank you Veritas ☨ and others who told me about this.
+      
+      If you have suggestions or any ideas to improve this further, don't hesitate to contact me.
+      
+      Now, the patch notes.
+      
+    - Readjusted ammo values.
+    - Made most ammo require some manner of research to be crafted instead of just "Smithing". 
+        - FMJ needs "Machining", AP and HP needs "Gunsmithing" as an example.
+    - Added .357 Mag ammo for heavier revolvers
+    - Added projectileWhenLoaded to all ammo thingdef for compatibility with Vehicle Framework and other mods.
+    - Switched around 5.56, 7.62 and 338Lapua projectile images to better account for their actual size.
+    - Fixed 7.62 and 5.56 names to the same as the textures.
+    - To make up for a possible ammo shortage, various traders will have more types of ammo to sell.
+
+    - Added some default association for ammo to some mods. Not all could get a good ammo fit atm, but am working on it.
+    - Added weapon ammo association from Vanilla Weapons Expanded.
+    - Added weapon ammo association from Vanilla Weapons Expanded Quickdraw.
+    - Added weapon ammo association from Vanilla Weapons Expanded Frontier.
+    - Added weapon ammo association from Vanilla Weapons Expanded Makeshift. (might not be perfect... Example: their shotgun now uses .22LR derp to not be crazy damage dealer due to their custom code)
+    - Added Rimsenal Augmented Vanilla default assignment
+    - Added Rimsenal spacer smart guns to auto assigned ammo.
+    - Added Ammo to Rimsenal Spacer faction traders
+
+2023-08-03
+    - Lowered 12g damage from 12*3 to 12*2 damage
+    - Lowered 12g Stopping power from 1 to 0.5
+
+2023-08-03
+    - Initial Release

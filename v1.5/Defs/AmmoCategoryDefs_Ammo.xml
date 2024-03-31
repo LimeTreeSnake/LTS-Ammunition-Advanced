@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--9mm-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_9mmAmmo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>9mm</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_9mmFMJ</li>
+            <li>LTS_9mmAP</li>
+            <li>LTS_9mmHP</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Gun_Autopistol</li>
+            <li>LTS_KPist</li>
+            <li>LTS_Glock</li>
+            <li>Gun_SmartPistol</li>
+            <li>Gun_SMG</li>
+            <li>VWE_CombatHandgun</li>
+            <li>VWE_Gun_LeverActionRifle</li>
+            <li>VWE_Gun_ServiceRifle</li>
+            <li>VWE_Gun_AutomaticPistol</li>
+            <li>VWEFT_Gun_VolcanicPistol</li>
+            <li>VWEFT_Gun_FrontierPistol</li>
+            <li>VWE_Gun_MakeshiftPistol</li>
+            <li>VWE_Gun_MakeshiftRifle</li>
+            <li>VWE_Gun_MakeshiftLMG</li>
+            <li>Gun_SmartMinigun</li>
+            <li>Gun_SmartAutoPistol</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+
+    <!--7.62mm-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_762Ammo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>7.62x39mm</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_762mmFMJ</li>
+            <li>LTS_762mmAP</li>
+            <li>LTS_762mmHP</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Gun_BoltActionRifle</li>
+            <li>LTS_AKIV</li>
+            <li>LTS_PSG</li>
+            <li>LTS_PKM</li>
+            <li>LTS_KSP</li>
+            <li>LTS_ScarH</li>
+            <li>Gun_RSBattleRifle</li>
+            <li>Gun_AutomaticRifle</li>
+            <li>Gun_MarksmanRifle</li>
+            <li>Gun_SmartRifle</li>
+            <li>VWE_Gun_SemiAutomaticRifle</li>
+            <li>VWE_Gun_HMG</li>
+            <li>VWE_Gun_MarksmanRifle</li>
+            <li>VWE_Gun_BullpupDMR</li>
+            <li>Gun_SmartBoltActionRifle</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+
+    <!--5.56mm-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_556Ammo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>5.56x45mm</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_556mmFMJ</li>
+            <li>LTS_556mmAP</li>
+            <li>LTS_556mmHP</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Gun_AssaultRifle</li>
+            <li>Gun_LMG</li>
+            <li>Gun_Minigun</li>
+            <li>LTS_AKV</li>
+            <li>LTS_G36Rifle</li>
+            <li>Gun_RSCarbine</li>
+            <li>Gun_Repeater</li>
+            <li>Gun_MilitiaRifle</li>
+            <li>VWE_Gun_BattleRifle</li>
+            <li>VWE_Gun_Carbine</li>
+            <li>VWE_Gun_BullpupRifle</li>
+            <li>Gun_SmartLMG</li>
+            <li>Gun_SmartAssaultRifle</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+
+    <!--12G-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_12GAmmo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>12G</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_12Gauge</li>
+            <li>LTS_12GaugeSlug</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Gun_PumpShotgun</li>
+            <li>Gun_ChainShotgun</li>
+            <li>LTS_Spas12Shotgun</li>
+            <li>LTS_RemingtonM1187Shotgun</li>
+            <li>LTS_BenelliM4Shotgun</li>
+            <li>VWE_SawedOffShotgun</li>
+            <li>VWEFT_Gun_RepeatingShotgun</li>
+            <li>VWE_Gun_MakeshiftShotgun</li>
+            <li>Gun_SmartPumpShotgun</li>
+            <li>Gun_SmartChainShotgun</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+    
+    <!--.50BMG-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_50BMGAmmo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>.50BMG</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_50BMGFMJ</li>
+            <li>LTS_50BMGHP</li>
+            <li>LTS_50BMGAP</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>LTS_AX50AntiMaterial</li>
+            <li>Gun_RSAMRifle</li>
+            <li>VWE_Gun_AntiMaterialRifle</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+        <ammoWeight>2</ammoWeight>
+    </Ammunition.Defs.AmmoCategoryDef>
+    
+    <!--.22 lr-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_22LRAmmo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>.22LR</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_22LRFMJ</li>
+            <li>LTS_22LRHP</li>
+            <li>LTS_22LRAP</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Gun_MachinePistol</li>
+            <li>VWE_Gun_LightSMG</li>
+            <li>VWE_Gun_SMG</li>
+            <li>VWE_Gun_MakeshiftSMG</li>
+            <li>Gun_SmartMachinePistol</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+    
+    <!--.45acp-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_45acpAmmo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>.45acp</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_45acpFMJ</li>
+            <li>LTS_45acpHP</li>
+            <li>LTS_45acpAP</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Gun_Revolver</li>
+            <li>Gun_HeavySMG</li>
+            <li>LTS_UMP</li>
+            <li>LTS_MP5SD</li>
+            <li>SmartMG</li>
+            <li>VWE_Gun_PDW</li>
+            <li>Gun_SmartRevolver</li>
+            <li>Gun_SmartHeavySMG</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+    
+    <!--.338Lapua-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_338LapuaAmmo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>.338Lapua</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_338LapuaFMJ</li>
+            <li>LTS_338LapuaHP</li>
+            <li>LTS_338LapuaAP</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Gun_SniperRifle</li>
+            <li>Gun_SmartSniperRifle</li>
+            <li>VWEFT_Gun_RollingBlockRifle</li>
+            <li>Gun_SniperRifleSmart</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+        <ammoWeight>2</ammoWeight>
+    </Ammunition.Defs.AmmoCategoryDef>
+
+    <!--.357Mag-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_357MagAmmo</defName>
+        <ammoType>Industrial</ammoType>
+        <label>.357Mag</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_357MagFMJ</li>
+            <li>LTS_357MagHP</li>
+            <li>LTS_357MagAP</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Gun_PistolHeavyRevolver</li>
+            <li>VWE_Gun_HandCannon</li>
+            <li>VWEFT_Gun_HeavyRevolver</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+        <ammoWeight>2</ammoWeight>
+    </Ammunition.Defs.AmmoCategoryDef>
+</Defs>
+<!--
+Gun_EmpLauncher
+Gun_SmokeLauncher
+Gun_IncendiaryLauncher
+
+
+Rimsenal Excluded weapons
+Gun_FR        (Rimsenal frontier rifle) 14 damage
+Gun_RSThumper Thumper gun??? 12 damage explosion radius 2.2
+Gun_EMPRifle   50 damage EMP?
+
+VWEFT_Gun_FrontierPistol 8 dmg ? assigned 9mm
+VWEFT_Gun_RollingBlockRifle 21 damage? assigned lapua
+VWE_Gun_MakeshiftPistol 8 dmg ? Assigned 9mm
+VWE_Gun_MakeshiftRifle 10 dmg ? Assigned 9mm
+VWE_Gun_MakeshiftShotgun 4 dmg ? Assigned .22LR
+-->

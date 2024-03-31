@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BaseBullet" Name="LTSBulletWithComp" Abstract="True">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+        </graphicData>
+        <comps>
+            <li Class="LTS_Systems.Components.CompPropertiesEffectToggle">
+                <effectDef>LTSPuff</effectDef>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- 9mm -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_9mmFMJProjectile</defName>
+        <label>9mm fmj bullet</label>
+        <graphicData>
+            <texPath>Projectiles/9mmFMJprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <stoppingPower>0.5</stoppingPower>
+            <armorPenetrationBase>0.15</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_9mmHPProjectile</defName>
+        <label>9mm hp bullet</label>
+        <graphicData>
+            <texPath>Projectiles/9mmHPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>11</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <armorPenetrationBase>0.075</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_9mmAPProjectile</defName>
+        <label>9mm ap bullet</label>
+        <graphicData>
+            <texPath>Projectiles/9mmAPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <stoppingPower>0.25</stoppingPower>
+            <armorPenetrationBase>0.3</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <!-- 5.56mm -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_556mmFMJProjectile</defName>
+        <label>5.56x45mm fmj bullet</label>
+        <graphicData>
+            <texPath>Projectiles/556mmFMJprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>11</damageAmountBase>
+            <stoppingPower>0.5</stoppingPower>
+            <armorPenetrationBase>0.165</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_556mmHPProjectile</defName>
+        <label>5.56x45mm hp bullet</label>
+        <graphicData>
+            <texPath>Projectiles/556mmHPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <armorPenetrationBase>0.0825</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_556mmAPProjectile</defName>
+        <label>5.56x45mm ap bullet</label>
+        <graphicData>
+            <texPath>Projectiles/556mmAPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <stoppingPower>0.25</stoppingPower>
+            <armorPenetrationBase>0.33</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <!-- 7.62mm -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_762mmFMJProjectile</defName>
+        <label>7.62x39mm fmj bullet</label>
+        <graphicData>
+            <texPath>Projectiles/762mmFMJprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <armorPenetrationBase>0.27</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_762mmHPProjectile</defName>
+        <label>7.62x39mm hp bullet</label>
+        <graphicData>
+            <texPath>Projectiles/762mmHPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>0.135</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_762mmAPProjectile</defName>
+        <label>7.62x39mm ap bullet</label>
+        <graphicData>
+            <texPath>Projectiles/762mmAPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <stoppingPower>0.75</stoppingPower>
+            <armorPenetrationBase>0.54</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <!-- .50BMG -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_50BMGFMJProjectile</defName>
+        <label>50BMG fmj bullet</label>
+        <graphicData>
+            <texPath>Projectiles/50BMGFMJprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>40</damageAmountBase>
+            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <stoppingPower>3</stoppingPower>
+            <speed>120</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_50BMGHPProjectile</defName>
+        <label>50BMG ap bullet</label>
+        <graphicData>
+            <texPath>Projectiles/50BMGHPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>45</damageAmountBase>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
+            <stoppingPower>6</stoppingPower>
+            <speed>120</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_50BMGAPProjectile</defName>
+        <label>50BMG bullet</label>
+        <graphicData>
+            <texPath>Projectiles/50BMGAPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>35</damageAmountBase>
+            <armorPenetrationBase>1</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>120</speed>
+        </projectile>
+    </ThingDef>
+    <!-- .22LR -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_22LRFMJProjectile</defName>
+        <label>.22LR fmj bullet</label>
+        <graphicData>
+            <texPath>Projectiles/22LRFMJprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <stoppingPower>0.5</stoppingPower>
+            <armorPenetrationBase>0.1</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_22LRHPProjectile</defName>
+        <label>.22LR hp bullet</label>
+        <graphicData>
+            <texPath>Projectiles/22LRHPprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <armorPenetrationBase>0.05</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_22LRAPProjectile</defName>
+        <label>.22LR ap bullet</label>
+        <graphicData>
+            <texPath>Projectiles/22LRAPprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>5</damageAmountBase>
+            <stoppingPower>0.25</stoppingPower>
+            <armorPenetrationBase>0.2</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+    <!-- .45acp -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_45acpFMJProjectile</defName>
+        <label>.45acp fmj bullet</label>
+        <graphicData>
+            <texPath>Projectiles/45acpFMJprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <armorPenetrationBase>0.18</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_45acpHPProjectile</defName>
+        <label>.45acp hp bullet</label>
+        <graphicData>
+            <texPath>Projectiles/45acpHPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>0.009</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_45acpAPProjectile</defName>
+        <label>.45acp ap bullet</label>
+        <graphicData>
+            <texPath>Projectiles/45acpAPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>11</damageAmountBase>
+            <armorPenetrationBase>0.36</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+    <!-- .338Lapua -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_338LapuaFMJProjectile</defName>
+        <label>.338Lapua fmj bullet</label>
+        <graphicData>
+            <texPath>Projectiles/338LapuaFMJprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>90</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_338LapuaHPProjectile</defName>
+        <label>.338Lapua hp bullet</label>
+        <graphicData>
+            <texPath>Projectiles/338LapuaHPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>28</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>0.175</armorPenetrationBase>
+            <speed>90</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_338LapuaAPProjectile</defName>
+        <label>.338Lapua ap bullet</label>
+        <graphicData>
+            <texPath>Projectiles/338LapuaAPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>22</damageAmountBase>
+            <stoppingPower>0.75</stoppingPower>
+            <armorPenetrationBase>0.7</armorPenetrationBase>
+            <speed>90</speed>
+        </projectile>
+    </ThingDef>
+    <!-- .357Mag -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_357MagFMJProjectile</defName>
+        <label>.357Mag fmj bullet</label>
+        <graphicData>
+            <texPath>Projectiles/357MagFMJprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>17</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_357MagHPProjectile</defName>
+        <label>.357Mag hp bullet</label>
+        <graphicData>
+            <texPath>Projectiles/357MagHPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>19</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>0.125</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_357MagAPProjectile</defName>
+        <label>.357Mag ap bullet</label>
+        <graphicData>
+            <texPath>Projectiles/357MagAPprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <stoppingPower>0.75</stoppingPower>
+            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

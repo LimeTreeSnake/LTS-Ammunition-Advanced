@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>    
+    <!--RailgunBase -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_AmmoRailgunBase" Abstract="True">
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <tradeTags>
+            <li>AmmoSpacer</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>EMP</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+    </ThingDef>
+    <!--6mm -->
+    <ThingDef ParentName="LTS_AmmoRailgunBase">
+        <defName>LTS_6mmRodStandard</defName>
+        <label>6mm standard rod</label>
+        <description>A railgun is a linear motor device, typically designed as a weapon, that uses electromagnetic force to launch high-velocity projectiles. The projectile normally does not contain explosives, instead relying on the projectile's high kinetic energy to inflict damage.
+
+            Damage: 16
+            Armor penetration: 30%
+            Stopping Power: 1</description>
+        <statBases>
+            <MarketValue>3.5</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <graphicData>
+            <texPath>Ammo/Ammo6mmRodStandard</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_6mmRodStandardProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo6mmRodStandard/6mmRodStandardAmmo_1</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_6mmRodStandardProjectile</bulletDef>
+                <burstCount>1</burstCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_AmmoRailgunBase">
+        <defName>LTS_6mmRodShatter</defName>
+        <label>6mm shatter rod</label>
+        <description>A railgun is a linear motor device, typically designed as a weapon, that uses electromagnetic force to launch high-velocity projectiles. The projectile normally does not contain explosives, instead relying on the projectile's high kinetic energy to inflict damage.
+
+            Damage: 2
+            Armor penetration: 10%
+            Stopping Power: 0.5
+            Burst shot amount: 16</description>
+        <statBases>
+            <MarketValue>4</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <graphicData>
+            <texPath>Ammo/Ammo6mmRodShatter</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_6mmRodShatterProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo6mmRodShatter/6mmRodShatterAmmo_1</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_6mmRodShatterProjectile</bulletDef> <!-- Will turn into Shattered shots midflight -->
+                <burstCount>1</burstCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--9mm -->
+    <ThingDef ParentName="LTS_AmmoRailgunBase">
+        <defName>LTS_9mmRodStandard</defName>
+        <label>9mm standard rod</label>
+        <description>A railgun is a linear motor device, typically designed as a weapon, that uses electromagnetic force to launch high-velocity projectiles. The projectile normally does not contain explosives, instead relying on the projectile's high kinetic energy to inflict damage.
+
+            Damage: 32
+            Armor penetration: 4%
+            Stopping Power: 1.5</description>
+        <statBases>
+            <MarketValue>4.5</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <graphicData>
+            <texPath>Ammo/Ammo9mmRodStandard</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_9mmRodStandardProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo9mmRodStandard/9mmRodStandardAmmo_1</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_9mmRodStandardProjectile</bulletDef>
+                <burstCount>1</burstCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_AmmoRailgunBase">
+        <defName>LTS_9mmRodExplosive</defName>
+        <label>9mm explosive rod</label>
+        <description>A railgun is a linear motor device, typically designed as a weapon, that uses electromagnetic force to launch high-velocity projectiles. The projectile normally does not contain explosives, instead relying on the projectile's high kinetic energy to inflict damage. This one however causes an explosion at its destination.</description>
+        <statBases>
+            <MarketValue>6.5</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <graphicData>
+            <texPath>Ammo/Ammo9mmRodExplosive</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_9mmRodExplosiveProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo9mmRodExplosive/9mmRodExplosiveAmmo_1</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_9mmRodExplosiveProjectile</bulletDef>
+                <burstCount>1</burstCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--12mm -->
+    <ThingDef ParentName="LTS_AmmoRailgunBase">
+        <defName>LTS_12mmRodStandard</defName>
+        <label>12mm standard rod</label>
+        <description>A railgun is a linear motor device, typically designed as a weapon, that uses electromagnetic force to launch high-velocity projectiles. The projectile normally does not contain explosives, instead relying on the projectile's high kinetic energy to inflict damage.
+
+            Damage: 32
+            Armor penetration: 4%
+            Stopping Power: 1.5</description>
+        <statBases>
+            <MarketValue>5.5</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <graphicData>
+            <texPath>Ammo/Ammo12mmRodStandard</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_12mmRodStandardProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo12mmRodStandard/12mmRodStandardAmmo_1</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_12mmRodStandardProjectile</bulletDef>
+                <burstCount>1</burstCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_AmmoRailgunBase">
+        <defName>LTS_12mmRodExplosive</defName>
+        <label>12mm explosive rod</label>
+        <description>A railgun is a linear motor device, typically designed as a weapon, that uses electromagnetic force to launch high-velocity projectiles. The projectile normally does not contain explosives, instead relying on the projectile's high kinetic energy to inflict damage. This one however causes an explosion at its destination.</description>
+        <statBases>
+            <MarketValue>7.5</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <graphicData>
+            <texPath>Ammo/Ammo12mmRodExplosive</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_12mmRodExplosiveProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo12mmRodExplosive/12mmRodExplosiveAmmo_1</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_12mmRodExplosiveProjectile</bulletDef>
+                <burstCount>1</burstCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+
+</Defs>

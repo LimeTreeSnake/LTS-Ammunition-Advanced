@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Musket Ball -->
+    <ThingDef ParentName="AmmunitionBase">
+        <defName>LTS_MusketBallAmmo</defName>
+        <label>musketball</label>
+        <description>A musket ball used as ammuntion for weapons from a bygone era.
+
+            Damage: 15
+            Armor penetration: 5%
+            StoppingPower: 1</description>
+        <graphicData>
+            <texPath>Ammo/AmmoMusket</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_MusketBallProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/AmmoMusket/MusketAmmo_a</uiIconPath>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Medieval</techLevel>
+        <tradeTags>
+            <li>AmmoMedieval</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_MusketBallProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!-- Bolt -->
+    <ThingDef ParentName="AmmunitionBase">
+        <defName>LTS_RegularBolt</defName>
+        <label>bolt</label>
+        <description>A bolt used for crossbows.
+
+            Damage: 14
+            Armor penetration: 20%
+            StoppingPower: 1</description>
+        <graphicData>
+            <texPath>Ammo/AmmoBolt</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_RegularBoltprojectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/AmmoBolt/BoltsAmmo_a</uiIconPath>
+        <soundInteract>Bow_Recurve</soundInteract>
+        <techLevel>Medieval</techLevel>
+        <tradeTags>
+            <li>AmmoMedieval</li>
+        </tradeTags>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_RegularBoltprojectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

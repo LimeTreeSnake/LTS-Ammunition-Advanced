@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--9mm -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_9mmBase" Abstract="True">
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>0.55</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="LTS_9mmBase">
+        <defName>LTS_9mmFMJ</defName>
+        <label>9mm (fmj)</label>
+        <description>9mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 10
+            Stopping power: 0.5
+            Armor penetration: 15%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo9mmFMJ</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_9mmFMJProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo9mmFMJ/9mmFMJ_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_9mmFMJProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_9mmBase">
+        <defName>LTS_9mmHP</defName>
+        <label>9mm (hp)</label>
+        <description>9mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 11
+            Stopping power: 1
+            Armor penetration: 7.5%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo9mmHP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_9mmHPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo9mmHP/9mmHP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_9mmHPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_9mmBase">
+        <defName>LTS_9mmAP</defName>
+        <label>9mm (ap)</label>
+        <description>9mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+            
+            Damage: 9
+            Stopping power: 0.25
+            Armor penetration: 30%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo9mmAP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_9mmAPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo9mmAP/9mmAP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_9mmAPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--5.56mm -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_556mmBase" Abstract="True">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>0.55</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="LTS_556mmBase">
+        <defName>LTS_556mmFMJ</defName>
+        <label>5.56mm (fmj)</label>
+        <description>5.56mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 11
+            Stopping power: 0.5
+            Armor penetration: 16.5%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo556mmFMJ</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_556mmFMJProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo556mmFMJ/556mmFMJ_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_556mmFMJProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_556mmBase">
+        <defName>LTS_556mmHP</defName>
+        <label>5.56mm (hp)</label>
+        <description>5.56mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 12
+            Stopping power: 1
+            Armor penetration: 8.25%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo556mmHP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_556mmHPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo556mmHP/556mmHP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_556mmHPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_556mmBase">
+        <defName>LTS_556mmAP</defName>
+        <label>5.56mm (ap)</label>
+        <description>5.56mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 10
+            Stopping power: 0.25
+            Armor penetration: 33%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo556mmAP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_556mmAPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo556mmAP/556mmAP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_556mmAPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--7.62mm -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_762mmBase" Abstract="True">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>0.55</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="LTS_762mmBase">
+        <defName>LTS_762mmFMJ</defName>
+        <label>7.62x39mm (fmj)</label>
+        <description>7.62mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 18
+            Stopping power: 1.5
+            Armor penetration: 27%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo762mmFMJ</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_762mmFMJProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo762mmFMJ/762mmFMJ_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_762mmFMJProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_762mmBase">
+        <defName>LTS_762mmHP</defName>
+        <label>7.62x39mm (hp)</label>
+        <description>7.62mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 20
+            Stopping power: 3
+            Armor penetration: 13.5%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo762mmHP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_762mmHPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo762mmHP/762mmHP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_762mmHPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_762mmBase">
+        <defName>LTS_762mmAP</defName>
+        <label>7.62x39mm (ap)</label>
+        <description>7.62mm ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 16
+            Stopping power: 0.75
+            Armor penetration: 54%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo762mmAP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_762mmAPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo762mmAP/762mmAP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_762mmAPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--.50BMG -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_50BMGBase" Abstract="True">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>2</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="LTS_50BMGBase">
+        <defName>LTS_50BMGFMJ</defName>
+        <label>.50BMG (fmj)</label>
+        <description>.50BMG ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 40
+            Armor penetration: 40%
+            StoppingPower: 3</description>
+        <graphicData>
+            <texPath>Ammo/Ammo50BMGFMJ</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_50BMGFMJProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo50BMGFMJ/50BMGFMJ_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_50BMGFMJProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_50BMGBase">
+        <defName>LTS_50BMGHP</defName>
+        <label>.50BMG (hp)</label>
+        <description>.50BMG ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 45
+            Armor penetration: 20%
+            StoppingPower: 6</description>
+        <graphicData>
+            <texPath>Ammo/Ammo50BMGHP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_50BMGHPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo50BMGHP/50BMGHP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_50BMGHPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_50BMGBase">
+        <defName>LTS_50BMGAP</defName>
+        <label>.50BMG (ap)</label>
+        <description>.50BMG ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 35
+            Armor penetration: 80%
+            StoppingPower: 1.5</description>
+        <graphicData>
+            <texPath>Ammo/Ammo50BMGAP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_50BMGAPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo50BMGAP/50BMGAP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_50BMGAPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--.22LR -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_22LRBase" Abstract="True">
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>0.4</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="LTS_22LRBase">
+        <defName>LTS_22LRFMJ</defName>
+        <label>.22LR (fmj)</label>
+        <description>.22 ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 6
+            StoppingPower: 0.5
+            Armor penetration: 10%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo22LRFMJ</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_22LRFMJProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo22LRFMJ/22LRFMJ_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_22LRFMJProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_22LRBase">
+        <defName>LTS_22LRHP</defName>
+        <label>.22LR (hp)</label>
+        <description>.22LR ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 7
+            StoppingPower: 1
+            Armor penetration: 5%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo22LRHP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_22LRHPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo22LRHP/22LRHP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_22LRHPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_22LRBase">
+        <defName>LTS_22LRAP</defName>
+        <label>.22LR (ap)</label>
+        <description>.22LR ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 5
+            StoppingPower: 0.25
+            Armor penetration: 20%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo22LRAP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_22LRAPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo22LRAP/22LRAP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_22LRAPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--.45acp -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_45acpBase" Abstract="True">
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>0.55</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="LTS_45acpBase">
+        <defName>LTS_45acpFMJ</defName>
+        <label>.45acp (fmj)</label>
+        <description>.45acp ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 12
+            StoppingPower: 1
+            Armor penetration: 18%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo45acpFMJ</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_45acpFMJProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo45acpFMJ/45acpFMJ_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_45acpFMJProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_45acpBase">
+        <defName>LTS_45acpHP</defName>
+        <label>.45acp (hp)</label>
+        <description>.45acp ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 13
+            StoppingPower: 2
+            Armor penetration: 9%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo45acpHP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_45acpHPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo45acpHP/45acpHP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_45acpHPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_45acpBase">
+        <defName>LTS_45acpAP</defName>
+        <label>.45acp (ap)</label>
+        <description>.45acp ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 11
+            StoppingPower: 0.5
+            Armor penetration: 36%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo45acpAP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_45acpAPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo45acpAP/45acpAP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_45acpAPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--.338Lapua -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_338LapuaBase" Abstract="True">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>1.5</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="LTS_338LapuaBase">
+        <defName>LTS_338LapuaFMJ</defName>
+        <label>.338Lapua (fmj)</label>
+        <description>.338Lapua ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 25
+            StoppingPower: 1.5
+            Armor penetration: 35%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo338LapuaFMJ</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_338LapuaFMJProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo338LapuaFMJ/338LapuaFMJ_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_338LapuaFMJProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_338LapuaBase">
+        <defName>LTS_338LapuaHP</defName>
+        <label>.338Lapua (hp)</label>
+        <description>.338Lapua ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 28
+            StoppingPower: 3
+            Armor penetration: 17.5%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo338LapuaHP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_338LapuaHPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo338LapuaHP/338LapuaHP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_338LapuaHPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_338LapuaBase">
+        <defName>LTS_338LapuaAP</defName>
+        <label>.338Lapua (ap)</label>
+        <description>.338Lapua ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 22
+            StoppingPower: 0.75
+            Armor penetration: 70%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo338LapuaAP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_338LapuaAPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo338LapuaAP/338LapuaAP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_338LapuaAPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--.357Mag -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_357MagBase" Abstract="True">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <statBases>
+            <MarketValue>1.5</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="LTS_357MagBase">
+        <defName>LTS_357MagFMJ</defName>
+        <label>.357Mag (fmj)</label>
+        <description>.357Mag ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 17
+            StoppingPower: 1.5
+            Armor penetration: 25%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo357MagFMJ</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_357MagFMJProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo357MagFMJ/357MagFMJ_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_357MagFMJProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_357MagBase">
+        <defName>LTS_357MagHP</defName>
+        <label>.357Mag (hp)</label>
+        <description>.357Mag ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 19
+            StoppingPower: 3
+            Armor penetration: 12.5%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo357MagHP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_357MagHPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo357MagHP/357MagHP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_357MagHPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_357MagBase">
+        <defName>LTS_357MagAP</defName>
+        <label>.357Mag (ap)</label>
+        <description>.357Mag ammunition that uses an explosive primer that will fire projectiles at incredible speeds.
+
+            Damage: 15
+            StoppingPower: 0.75
+            Armor penetration: 50%</description>
+        <graphicData>
+            <texPath>Ammo/Ammo357MagAP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_357MagAPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo357MagAP/357MagAP_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_357MagAPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

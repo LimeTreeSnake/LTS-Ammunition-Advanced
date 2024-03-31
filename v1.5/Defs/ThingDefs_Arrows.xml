@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--Short Base -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_ArrowShortBase" Abstract="True">
+        <soundInteract>Bow_Small</soundInteract>
+        <techLevel>Neolithic</techLevel>
+        <tradeTags>
+            <li>AmmoPrimitive</li>
+        </tradeTags>
+    </ThingDef>
+    <!--Recurve Base -->
+    <ThingDef ParentName="LTS_ArrowShortBase" Name="LTS_ArrowRecurveBase" Abstract="True">
+        <soundInteract>Bow_Recurve</soundInteract>
+    </ThingDef>
+    <!--Great Base -->
+    <ThingDef ParentName="LTS_ArrowShortBase" Name="LTS_ArrowGreatBase" Abstract="True">
+        <soundInteract>Bow_Large</soundInteract>
+    </ThingDef>
+    <!--Polymer Base -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_ArrowPolymerBase" Abstract="True">
+        <soundInteract>Bow_Recurve</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+    </ThingDef>
+
+
+    <!--Short -->
+    <ThingDef ParentName="LTS_ArrowShortBase">
+        <defName>LTS_ShortArrow</defName>
+        <label>short arrows</label>
+        <description>a bundle of short arrows used for smaller bows.
+
+            Damage: 11
+            Armor penetration: 5%</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowPrimitive</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowShortProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>0.45</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowShortProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_ArrowShortBase">
+        <defName>LTS_ShortFlameArrow</defName>
+        <label>short flame arrows</label>
+        <description>a bundle of short flame arrows used for smaller bows that causes fire.
+
+            Damage: 6</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowPrimitiveFire</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowShortFlameProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>0.6</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowShortFlameProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    
+    <!--Recurve -->
+    <ThingDef ParentName="LTS_ArrowRecurveBase">
+        <defName>LTS_RecurveArrow</defName>
+        <label>recurve arrows</label>
+        <description>a bundle of arrows used for bows.
+
+            Damage: 14
+            Armor penetration: 10%
+            Stopping power: 1</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowPrimitive</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowRecurveProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>0.45</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowRecurveProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="LTS_ArrowRecurveBase">
+        <defName>LTS_RecurveFlameArrow</defName>
+        <label>recurve flame arrows</label>
+        <description>a bundle of flame arrows used for bows that causes fire.
+
+            Damage: 8
+            Stopping power: 1</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowPrimitiveFire</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowRecurveFlameProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>0.6</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowRecurveFlameProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    
+    <!--Great -->
+    <ThingDef ParentName="LTS_ArrowGreatBase">
+        <defName>LTS_GreatArrow</defName>
+        <label>great arrows</label>
+        <description>a bundle of great arrows used for them large bows.
+
+            Damage: 17
+            Armor penetration: 15%
+            Stopping power: 1.5</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowPrimitive</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.25</drawSize>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowGreatProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>0.45</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowGreatProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="LTS_ArrowGreatBase">
+        <defName>LTS_GreatFlameArrow</defName>
+        <label>great flame arrows</label>
+        <description>a bundle of great arrows used for them large bows that causes fire.
+
+            Damage: 10
+            Stopping power: 1.5</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowPrimitiveFire</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.25</drawSize>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowGreatFlameProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>0.6</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowGreatFlameProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!--Polymer Broad -->
+    <ThingDef ParentName="LTS_ArrowPolymerBase">
+        <defName>LTS_PolymerBroadArrow</defName>
+        <label>polymer broad arrows</label>
+        <description>a bundle of polymer broad arrows.
+
+            Damage: 18
+            Armor penetration: 25%
+            Stopping power: 1</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowBroad</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowPolymerBroadProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>0.75</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowPolymerBroadProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--Polymer Bulletpoint -->
+    <ThingDef ParentName="LTS_ArrowPolymerBase">
+        <defName>LTS_PolymerBulletpointArrow</defName>
+        <label>polymer bulletpoint arrows</label>
+        <description>a bundle of polymer bulletpoint arrows.
+
+            Damage: 14
+            Armor penetration: 50%</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowBullet</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowBulletpointProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>0.75</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowBulletpointProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--Polymer Incendiary -->
+    <ThingDef ParentName="LTS_ArrowPolymerBase">
+        <defName>LTS_PolymerIncendiaryArrow</defName>
+        <label>polymer incendiary arrows</label>
+        <description>a bundle of polymer incendiary arrows.
+
+            Damage: 11
+            Stopping power: 1</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowIncendiary</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowPolymerIncendiaryProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>1</MarketValue>
+            <Mass>0.025</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowPolymerIncendiaryProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--Polymer EMP -->
+    <ThingDef ParentName="LTS_ArrowPolymerBase">
+        <defName>LTS_PolymerEMPArrow</defName>
+        <label>polymer EMP arrows</label>
+        <description>a bundle of polymer EMP arrows.
+
+            Damage Type: EMP
+            Explosion Radius: 1.9</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowEMP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowEMPProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>5</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowEMPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--Polymer Explosive -->
+    <ThingDef ParentName="LTS_ArrowPolymerBase">
+        <defName>LTS_PolymerExplosiveArrow</defName>
+        <label>polymer explosive arrows</label>
+        <description>a bundle of polymer Explosive arrows.
+
+            Damage Type: Bomb
+            Explosion Radius: 1.9</description>
+        <graphicData>
+            <texPath>Ammo/AmmoArrowExplosive</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_ArrowExplosiveProjectile</projectileWhenLoaded>
+        <statBases>
+            <MarketValue>5</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_ArrowExplosiveProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

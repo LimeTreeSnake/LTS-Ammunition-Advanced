@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 6mm Railgun Shatter -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_6mmRodShatterProjectile</defName>
+        <thingClass>LTS_Systems.ThingWithComps.BulletEnhanced</thingClass>
+        <label>6mm shatter rod</label>
+        <graphicData>
+            <texPath>Projectiles/6mmRodShatterContainerprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <speed>60</speed>
+        </projectile>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="LTS_Systems.DefModExtensions.BulletExtension">
+                <splitCount>16</splitCount>
+                <bullet>LTS_6mmRodShatteredProjectile</bullet>
+            </li>
+        </modExtensions>
+        <comps>
+            <li Class="LTS_Systems.Components.CompPropertiesEffectToggle">
+                <effectDef>LTSSparklesBlue</effectDef>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- 6mm Railgun Shattered -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_6mmRodShatteredProjectile</defName>
+        <label>6mm shattered rod</label>
+        <graphicData>
+            <texPath>Projectiles/6mmRodShatterprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>2</damageAmountBase>
+            <armorPenetrationBase>0.1</armorPenetrationBase>
+            <stoppingPower>0.5</stoppingPower>
+            <speed>120</speed>
+        </projectile>
+    </ThingDef>
+    <!-- 6mm Railgun Standard -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_6mmRodStandardProjectile</defName>
+        <label>6mm standard rod</label>
+        <graphicData>
+            <texPath>Projectiles/6mmRodStandardprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <armorPenetrationBase>0.3</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>120</speed>
+        </projectile>
+        <comps>
+            <li Class="LTS_Systems.Components.CompPropertiesEffectToggle">
+                <effectDef>LTSSparklesRed</effectDef>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- 9mm Railgun Standard -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_9mmRodStandardProjectile</defName>
+        <label>9mm standard rod</label>
+        <graphicData>
+            <texPath>Projectiles/9mmRodStandardprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>32</damageAmountBase>
+            <armorPenetrationBase>0.4</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>120</speed>
+        </projectile>
+        <comps>
+            <li Class="LTS_Systems.Components.CompPropertiesEffectToggle">
+                <effectDef>LTSSparklesBlue</effectDef>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- 9mm Railgun Explosive -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_9mmRodExplosiveProjectile</defName>
+        <label>9mm primed rod</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Projectiles/9mmRodExplosiveprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <explosionRadius>1.2</explosionRadius>
+            <damageAmountBase>32</damageAmountBase>
+            <speed>120</speed>
+        </projectile>
+        <comps>
+            <li Class="LTS_Systems.Components.CompPropertiesEffectToggle">
+                <effectDef>LTSSparklesYellow</effectDef>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- 12mm Railgun Standard -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_12mmRodStandardProjectile</defName>
+        <label>12mm standard rod</label>
+        <graphicData>
+            <texPath>Projectiles/12mmRodStandardprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>48</damageAmountBase>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <stoppingPower>2</stoppingPower>
+            <speed>120</speed>
+        </projectile>
+        <comps>
+            <li Class="LTS_Systems.Components.CompPropertiesEffectToggle">
+                <effectDef>LTSSparklesBlue</effectDef>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- 12mm Railgun Explosive -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_12mmRodExplosiveProjectile</defName>
+        <label>12mm primed rod</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Projectiles/12mmRodExplosiveprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <explosionRadius>2.4</explosionRadius>
+            <damageAmountBase>48</damageAmountBase>
+            <speed>120</speed>
+        </projectile>
+        <comps>
+            <li Class="LTS_Systems.Components.CompPropertiesEffectToggle">
+                <effectDef>LTSSparklesYellow</effectDef>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

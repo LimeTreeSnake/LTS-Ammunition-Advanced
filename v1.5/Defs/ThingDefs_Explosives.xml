@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>    
+    <!--RCL -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_AmmoRCLBase" Abstract="True">
+        <soundInteract>Interact_Rifle</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoExplosive</li>
+        </tradeTags>
+        <statBases>
+            <MarketValue>1.25</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.9</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <effectWorking>Cook</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <workAmount>800</workAmount>
+            <targetCountAdjustment>5</targetCountAdjustment>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <displayPriority>99</displayPriority>
+            <researchPrerequisite>Mortars</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+    <ThingDef ParentName="LTS_AmmoRCLBase">
+        <defName>LTS_RCL441HE</defName>
+        <label>RCL441(HE)</label>
+        <description>RCL441(HE) is an HE round, useful in a "lobbed" trajectory to 1,000m, which can be fused to either detonate on impact or as an airburst
+
+            Damage Type: Bomb
+            Explosion Radius: 3.9</description>
+        <graphicData>
+            <texPath>Ammo/AmmoFFV441</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_RCL441HEProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/AmmoFFV441/FFV441_a</uiIconPath>
+        <costList>
+            <Steel>15</Steel>
+            <Chemfuel>15</Chemfuel>
+        </costList>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_RCL441HEProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_AmmoRCLBase">
+        <defName>LTS_RCLEMP</defName>
+        <label>RCLX(EMP)</label>
+        <description>RCLX(EMP) is an EMP round, useful in a "lobbed" trajectory to 1,000m, which can be fused to either detonate on impact or as an airburst
+
+            Damage Type: EMP
+            Explosion Radius: 5.9</description>
+        <graphicData>
+            <texPath>Ammo/AmmoFFVEMP</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_RCLEMPProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/AmmoFFVEMP/FFVEMP_a</uiIconPath>
+        <costList>
+            <Steel>15</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_RCLEMPProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_AmmoRCLBase">
+        <defName>LTS_RCL469SMK</defName>
+        <label>RCL469(SMK)</label>
+        <description>RCL469(SMK) is a smoke round, useful in a "lobbed" trajectory to 1,000m, which can be fused to either detonate on impact or as an airburst
+
+            Damage Type: Smoke
+            Explosion Radius: 6.2</description>
+        <graphicData>
+            <texPath>Ammo/AmmoFFV469</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_RCL469SMKProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/AmmoFFV469/FFV469_a</uiIconPath>
+        <costList>
+            <Steel>25</Steel>
+        </costList>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_RCL469SMKProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="LTS_AmmoRCLBase">
+        <defName>LTS_RCL509ASM</defName>
+        <label>RCL509(ASM)</label>
+        <description>RCL509(ASM) is a thump round, useful in a "lobbed" trajectory to 1,000m, which can be fused to either detonate on impact or as an airburst
+
+            Damage Type: Thump
+            Stopping Power: 3
+            Damage Base: 9
+            Explosion Radius: 4.2</description>
+        <graphicData>
+            <texPath>Ammo/AmmoFFV509</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_RCL509ASMProjectile</projectileWhenLoaded>
+        <costList>
+            <Steel>30</Steel>
+        </costList>
+        <uiIconPath>Ammo/AmmoFFV509/FFV509_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_RCL509ASMProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

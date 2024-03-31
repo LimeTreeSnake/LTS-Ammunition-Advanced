@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--9mm -->
+    <RecipeDef Name="LTS_9mmBaseRecipe" Abstract="True">
+        <description>Make bullets that go pew.</description>
+        <jobString>Making bullets.</jobString>
+        <workAmount>1200</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_9mmBaseRecipe">
+        <defName>Make_Ammo9mmFMJ</defName>
+        <label>make 9mm FMJ ammo</label>
+        <products>
+            <LTS_9mmFMJ>100</LTS_9mmFMJ>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_9mmBaseRecipe">
+        <defName>Make_Ammo9mmAP</defName>
+        <label>make 9mm AP ammo</label>
+        <products>
+            <LTS_9mmAP>100</LTS_9mmAP>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_9mmBaseRecipe">
+        <defName>Make_Ammo9mmHP</defName>
+        <label>make 9mm HP ammo</label>
+        <products>
+            <LTS_9mmHP>100</LTS_9mmHP>
+        </products>
+    </RecipeDef>
+    <!--7.62mm -->
+    <RecipeDef Name="LTS_762mmBaseRecipe" Abstract="True">
+        <description>Make bullets that go pew.</description>
+        <jobString>Making bullets.</jobString>
+        <workAmount>1200</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_762mmBaseRecipe">
+        <defName>Make_Ammo762mmFMJ</defName>
+        <label>make 7.62mm FMJ ammo</label>
+        <products>
+            <LTS_762mmFMJ>100</LTS_762mmFMJ>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_762mmBaseRecipe">
+        <defName>Make_Ammo762mmAP</defName>
+        <label>make 7.62mm AP ammo</label>
+        <products>
+            <LTS_762mmAP>100</LTS_762mmAP>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_762mmBaseRecipe">
+        <defName>Make_Ammo762mmHP</defName>
+        <label>make 7.62mm HP ammo</label>
+        <products>
+            <LTS_762mmHP>100</LTS_762mmHP>
+        </products>
+    </RecipeDef>
+    <!--5.56mm -->
+    <RecipeDef Name="LTS_556mmBaseRecipe" Abstract="True">
+        <description>Make bullets that go pew.</description>
+        <jobString>Making bullets.</jobString>
+        <workAmount>1200</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_556mmBaseRecipe">
+        <defName>Make_Ammo556mmFMJ</defName>
+        <label>make 5.56mm FMJ ammo</label>
+        <products>
+            <LTS_556mmFMJ>100</LTS_556mmFMJ>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_556mmBaseRecipe">
+        <defName>Make_Ammo556mmAP</defName>
+        <label>make 5.56mm AP ammo</label>
+        <products>
+            <LTS_556mmAP>100</LTS_556mmAP>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_556mmBaseRecipe">
+        <defName>Make_Ammo556mmHP</defName>
+        <label>make 5.56mm HP ammo</label>
+        <products>
+            <LTS_556mmHP>100</LTS_556mmHP>
+        </products>
+    </RecipeDef>
+    <!--12G -->
+    <RecipeDef Name="LTS_12GBaseRecipe" Abstract="True">
+        <description>Make shotgun ammo that go skra papapa.</description>
+        <jobString>Making shotgun ammo.</jobString>
+        <workAmount>1500</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_12GBaseRecipe">
+        <defName>Make_Ammo12G</defName>
+        <label>make 12g shotgun ammo</label>
+        <products>
+            <LTS_12Gauge>50</LTS_12Gauge>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_12GBaseRecipe">
+        <defName>Make_Ammo12GSlug</defName>
+        <label>make 12g slug shotgun ammo</label>
+        <products>
+            <LTS_12GaugeSlug>50</LTS_12GaugeSlug>
+        </products>
+    </RecipeDef>
+    <!--.50BMG -->
+    <RecipeDef Name="LTS_50BMGBaseRecipe" Abstract="True">
+        <description>Make bullets that go pew.</description>
+        <jobString>Making bullets.</jobString>
+        <workAmount>1500</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_50BMGBaseRecipe">
+        <defName>Make_Ammo50BMGFMJ</defName>
+        <label>make 50BMG FMJ ammo</label>
+        <products>
+            <LTS_50BMGFMJ>50</LTS_50BMGFMJ>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_50BMGBaseRecipe">
+        <defName>Make_Ammo50BMGAP</defName>
+        <label>make 50BMG AP ammo</label>
+        <products>
+            <LTS_50BMGAP>50</LTS_50BMGAP>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_50BMGBaseRecipe">
+        <defName>Make_Ammo50BMGHP</defName>
+        <label>make 50BMG HP ammo</label>
+        <products>
+            <LTS_50BMGHP>50</LTS_50BMGHP>
+        </products>
+    </RecipeDef>
+    <!--.22LR -->
+    <RecipeDef Name="LTS_22LRBaseRecipe" Abstract="True">
+        <description>Make bullets that go pew.</description>
+        <jobString>Making bullets.</jobString>
+        <workAmount>1000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_22LRBaseRecipe">
+        <defName>Make_Ammo22LRFMJ</defName>
+        <label>make 22LR FMJ ammo</label>
+        <products>
+            <LTS_22LRFMJ>100</LTS_22LRFMJ>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_22LRBaseRecipe">
+        <defName>Make_Ammo22LRAP</defName>
+        <label>make 22LR AP ammo</label>
+        <products>
+            <LTS_22LRAP>100</LTS_22LRAP>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_22LRBaseRecipe">
+        <defName>Make_Ammo22LRHP</defName>
+        <label>make 22LR HP ammo</label>
+        <products>
+            <LTS_22LRHP>100</LTS_22LRHP>
+        </products>
+    </RecipeDef>
+    <!--.45acp -->
+    <RecipeDef Name="LTS_45acpBaseRecipe" Abstract="True">
+        <description>Make bullets that go pew.</description>
+        <jobString>Making bullets.</jobString>
+        <workAmount>1000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_45acpBaseRecipe">
+        <defName>Make_Ammo45acpFMJ</defName>
+        <label>make 45acp FMJ ammo</label>
+        <products>
+            <LTS_45acpFMJ>100</LTS_45acpFMJ>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_45acpBaseRecipe">
+        <defName>Make_Ammo45acpAP</defName>
+        <label>make 45acp AP ammo</label>
+        <products>
+            <LTS_45acpAP>100</LTS_45acpAP>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_45acpBaseRecipe">
+        <defName>Make_Ammo45acpHP</defName>
+        <label>make 45acp HP ammo</label>
+        <products>
+            <LTS_45acpHP>100</LTS_45acpHP>
+        </products>
+    </RecipeDef>   
+    <!--.338Lapua -->
+    <RecipeDef Name="LTS_338LapuaBaseRecipe" Abstract="True">
+        <description>Make bullets that go pew.</description>
+        <jobString>Making bullets.</jobString>
+        <workAmount>1000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_338LapuaBaseRecipe">
+        <defName>Make_Ammo338LapuaFMJ</defName>
+        <label>make 338Lapua FMJ ammo</label>
+        <products>
+            <LTS_338LapuaFMJ>50</LTS_338LapuaFMJ>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_338LapuaBaseRecipe">
+        <defName>Make_Ammo338LapuaAP</defName>
+        <label>make 338Lapua AP ammo</label>
+        <products>
+            <LTS_338LapuaAP>50</LTS_338LapuaAP>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_338LapuaBaseRecipe">
+        <defName>Make_Ammo338LapuaHP</defName>
+        <label>make 338Lapua HP ammo</label>
+        <products>
+            <LTS_338LapuaHP>50</LTS_338LapuaHP>
+        </products>
+    </RecipeDef>
+    <!--.357Mag -->
+    <RecipeDef Name="LTS_357MagBaseRecipe" Abstract="True">
+        <description>Make bullets that go pew.</description>
+        <jobString>Making bullets.</jobString>
+        <workAmount>1000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_357MagBaseRecipe">
+        <defName>Make_Ammo357MagFMJ</defName>
+        <label>make 357Mag FMJ ammo</label>
+        <products>
+            <LTS_357MagFMJ>50</LTS_357MagFMJ>
+        </products>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_357MagBaseRecipe">
+        <defName>Make_Ammo357MagAP</defName>
+        <label>make 357Mag AP ammo</label>
+        <products>
+            <LTS_357MagAP>50</LTS_357MagAP>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="LTS_357MagBaseRecipe">
+        <defName>Make_Ammo357MagHP</defName>
+        <label>make 357Mag HP ammo</label>
+        <products>
+            <LTS_357MagHP>50</LTS_357MagHP>
+        </products>
+    </RecipeDef>
+</Defs>

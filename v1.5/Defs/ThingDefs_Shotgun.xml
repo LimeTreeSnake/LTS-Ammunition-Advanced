@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>    
+    <!--12G -->
+    <ThingDef ParentName="AmmunitionBase" Name="LTS_AmmoShotgunBase" Abstract="True">
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <tradeTags>
+            <li>AmmoIndustrial</li>
+        </tradeTags>
+        <statBases>
+            <MarketValue>1.1</MarketValue>
+            <Mass>0.02</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.0</explosiveRadius>
+                <explosiveDamageType>Burn</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+                <wickTicks>
+                    <min>30</min>
+                    <max>60</max>
+                </wickTicks>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="LTS_AmmoShotgunBase">
+        <defName>LTS_12Gauge</defName>
+        <label>12 gauge</label>
+        <description>12 gauge commonly referred to as bore in British English is a unit of measurement used to express the inner diameter (bore diameter) of the barrel. Gauge is commonly used today in reference to shotguns, though historically it was also used in large double rifles, which were made in sizes up to 2 bore during their heyday in the 1880s, being originally loaded with black powder cartridges. These very large rifles, called "elephant guns", were intended for use primarily in Africa and Asia for hunting large dangerous game.
+
+            Damage: 3
+            Stopping Power: 0.25
+            Armor Penetration 5%
+            Burst shot amount: 12</description>
+        <graphicData>
+            <texPath>Ammo/Ammo12G</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_12GaugeProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo12G/12G_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_12GaugeProjectile</bulletDef>
+                <burstCount>12</burstCount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="LTS_AmmoShotgunBase">
+        <defName>LTS_12GaugeSlug</defName>
+        <label>12 gauge slug</label>
+        <description>12 gauge commonly referred to as bore in British English is a unit of measurement used to express the inner diameter (bore diameter) of the barrel. Gauge is commonly used today in reference to shotguns, though historically it was also used in large double rifles, which were made in sizes up to 2 bore during their heyday in the 1880s, being originally loaded with black powder cartridges. These very large rifles, called "elephant guns", were intended for use primarily in Africa and Asia for hunting large dangerous game.
+
+            Damage: 18
+            Armor penetration: 30%
+            StoppingPower: 3</description>
+        <graphicData>
+            <texPath>Ammo/Ammo12GSlug</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <projectileWhenLoaded>LTS_12GaugeSlugProjectile</projectileWhenLoaded>
+        <uiIconPath>Ammo/Ammo12GSlug/12GSlug_a</uiIconPath>
+        <modExtensions>
+            <li MayRequire="LimeTreeSnake.Ammunition" Class="Ammunition.DefModExtensions.AmmunitionExtension">
+                <bulletDef>LTS_12GaugeSlugProjectile</bulletDef>
+            </li>
+        </modExtensions>
+    </ThingDef>   
+</Defs>

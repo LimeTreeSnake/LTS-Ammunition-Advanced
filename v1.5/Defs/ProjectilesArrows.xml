@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BaseProjectileNeolithic" Name="LTSFlameArrow" Abstract="True">
+        <thingClass>FireArrow</thingClass>
+        <comps>
+            <li Class="LTS_Systems.Components.CompPropertiesEffectToggle">
+                <effectDef>LTSFlameTrail</effectDef>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <!-- Short Arrow -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_ArrowShortProjectile</defName>
+        <label>short arrow</label>
+        <graphicData>
+            <texPath>Projectiles/PrimitiveStandardArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.25</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Arrow</damageDef>
+            <damageAmountBase>11</damageAmountBase>
+            <armorPenetrationBase>0.05</armorPenetrationBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+    <!-- Short Flame Arrow -->
+    <ThingDef ParentName="LTSFlameArrow">
+        <defName>LTS_ArrowShortFlameProjectile</defName>
+        <label>short flame arrow</label>
+        <graphicData>
+            <texPath>Projectiles/PrimitiveFireArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.25</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Arrow</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <armorPenetrationBase>0.05</armorPenetrationBase>
+            <speed>50</speed>
+            <ai_IsIncendiary>true</ai_IsIncendiary>
+        </projectile>
+    </ThingDef>
+    <!-- Recurve Arrow -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_ArrowRecurveProjectile</defName>
+        <label>recurve arrow</label>
+        <graphicData>
+            <texPath>Projectiles/PrimitiveStandardArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.75</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>14</damageAmountBase>
+            <armorPenetrationBase>0.1</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+    <!-- Recurve Flame Arrow -->
+    <ThingDef ParentName="LTSFlameArrow">
+        <defName>LTS_ArrowRecurveFlameProjectile</defName>
+        <label>recurve flame arrow</label>
+        <graphicData>
+            <texPath>Projectiles/PrimitiveFireArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>1.75</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <armorPenetrationBase>0.1</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>55</speed>
+            <ai_IsIncendiary>true</ai_IsIncendiary>
+        </projectile>
+    </ThingDef>
+    <!-- Great Arrow -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_ArrowGreatProjectile</defName>
+        <label>great arrow</label>
+        <graphicData>
+            <texPath>Projectiles/PrimitiveStandardArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>2.25</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>17</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <armorPenetrationBase>0.15</armorPenetrationBase>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+    <!-- Recurve Flame Arrow -->
+    <ThingDef ParentName="LTSFlameArrow">
+        <defName>LTS_ArrowGreatFlameProjectile</defName>
+        <label>great flame arrow</label>
+        <graphicData>
+            <texPath>Projectiles/PrimitiveFireArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>2.25</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <armorPenetrationBase>0.1</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>55</speed>
+            <ai_IsIncendiary>true</ai_IsIncendiary>
+        </projectile>
+    </ThingDef>
+    <!-- Polymer Broad Arrow -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_ArrowPolymerBroadProjectile</defName>
+        <label>polymer broad arrow</label>
+        <graphicData>
+            <texPath>Projectiles/ModernBroadArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+    <!-- Polymer Bulletpoint Arrow -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_ArrowBulletpointProjectile</defName>
+        <label>polymer bulletpoint arrow</label>
+        <graphicData>
+            <texPath>Projectiles/ModernBulletpointArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>14</damageAmountBase>
+            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+    <!-- Polymer Incendiary Arrow -->
+    <ThingDef ParentName="LTSFlameArrow">
+        <defName>LTS_ArrowPolymerIncendiaryProjectile</defName>
+        <label>polymer incendiary arrow</label>
+        <graphicData>
+            <texPath>Projectiles/ModernIncendiaryArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>11</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>65</speed>
+            <ai_IsIncendiary>true</ai_IsIncendiary>
+        </projectile>
+    </ThingDef>
+    <!-- Polymer EMP Arrow -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_ArrowEMPProjectile</defName>
+        <label>polymer EMP arrow</label>
+        <graphicData>
+            <texPath>Projectiles/ModernEMPArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>EMP</damageDef>
+            <explosionRadius>1.9</explosionRadius>
+            <soundExplode>Explosion_EMP</soundExplode>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+    <!-- Polymer Explosive Arrow -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_ArrowExplosiveProjectile</defName>
+        <label>polymer explosive arrow</label>
+        <graphicData>
+            <texPath>Projectiles/ModernExplosiveArrowprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <explosionRadius>1.9</explosionRadius>
+            <soundExplode>MortarBomb_Explode</soundExplode>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

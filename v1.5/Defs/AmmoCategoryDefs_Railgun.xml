@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--6mm Railgun-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_6mmRod</defName>
+        <ammoType>Spacer</ammoType>
+        <label>6mm rods</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_6mmRodStandard</li>
+            <li>LTS_6mmRodShatter</li>
+        </ammoDefs>
+        <weightList>
+            <li>3</li>
+            <li>1</li>
+        </weightList>
+        <includeWeaponDefs>
+            <li>Gun_ChargeRifle</li>
+            <li>LTS_RailRevolver</li>
+            <li>Gun_ChargeSidearm</li>
+            <li>Gun_ScatterCharger</li>
+            <li>Gun_AssaultCharger</li>
+            <li>Gun_BurstCharger</li>
+            <li>Gun_CFR</li>
+            <li>VWE_Gun_ChargePistol</li>
+            <li>VWE_Gun_ChargeShotgun</li>
+            <li>VWE_Gun_ChargeSMG</li>
+            <li>VWE_Gun_ChargeLMG</li>
+            <li>VWE_Bullet_ChargeMinigun</li>
+            <li>Gun_SmartChargeRifle</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+    <!--9mm Railgun-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_9mmRod</defName>
+        <ammoType>Spacer</ammoType>
+        <label>9mm rods</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_9mmRodStandard</li>
+            <li>LTS_9mmRodExplosive</li>
+        </ammoDefs>
+        <weightList>
+            <li>9</li>
+            <li>1</li>
+        </weightList>
+        <includeWeaponDefs>
+            <li>Gun_ChargeLance</li>
+            <li>LTS_RailRifle</li>
+            <li>LTS_RailLMG</li>
+            <li>LTS_RailDMR</li>
+            <li>VWE_Gun_ChargeSniperRifle</li>
+            <li>Gun_SmartChargeLance</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+    <!--12mm Railgun-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_12mmRod</defName>
+        <ammoType>Spacer</ammoType>
+        <label>12mm rods</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_12mmRodStandard</li>
+            <li>LTS_12mmRodExplosive</li>
+        </ammoDefs>
+        <weightList>
+            <li>9</li>
+            <li>1</li>
+        </weightList>
+        <includeWeaponDefs>
+            <li>LTS_RailPSG</li>
+            <li>Gun_ChargeDriver</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+</Defs>

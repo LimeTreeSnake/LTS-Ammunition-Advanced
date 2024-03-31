@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>   
+    <!-- Musket Ball -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_MusketBallProjectile</defName>
+        <label>musket ball</label>
+        <graphicData>
+            <texPath>Projectiles/Musketprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <armorPenetrationBase>0.05</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- Bolt -->
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>LTS_RegularBoltprojectile</defName>
+        <label>bolt</label>
+        <graphicData>
+            <texPath>Projectiles/Boltprojectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>14</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <armorPenetrationBase>0.2</armorPenetrationBase>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

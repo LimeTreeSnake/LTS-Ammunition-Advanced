@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 12G -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_12GaugeProjectile</defName>
+        <label>12g shot</label>
+        <description>12G shot, one of 12.</description>
+        <graphicData>
+            <texPath>Projectiles/12Gprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>3</damageAmountBase>
+            <stoppingPower>0.5</stoppingPower>
+            <armorPenetrationBase>0.05</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- 12G Slug -->
+    <ThingDef ParentName="LTSBulletWithComp">
+        <defName>LTS_12GaugeSlugProjectile</defName>
+        <label>12g shot</label>
+        <description>12G shot, one of 12.</description>
+        <graphicData>
+            <texPath>Projectiles/12GSlugprojectile</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>0.3</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

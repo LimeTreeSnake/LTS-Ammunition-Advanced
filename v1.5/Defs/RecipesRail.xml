@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Railgun Ammo -->
+    <RecipeDef Name="LTS_RailgunBaseRecipe" Abstract="True">
+        <description>Make railgun rods for high tech weaponry.</description>
+        <jobString>Making railgun rods.</jobString>
+        <workAmount>5000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <researchPrerequisite>Fabrication</researchPrerequisite>
+    </RecipeDef>
+    
+    <!--6mm Standard Rod -->
+    <RecipeDef ParentName="LTS_RailgunBaseRecipe">
+        <defName>Make_6mmRailgunStandardRods</defName>
+        <label>make 6mm railgun standard rods</label>
+        <products>
+            <LTS_6mmRodStandard>50</LTS_6mmRodStandard>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+    <!--6mm Shatter Rod -->
+    <RecipeDef ParentName="LTS_RailgunBaseRecipe">
+        <defName>Make_6mmRailgunShatterRods</defName>
+        <label>make 6mm railgun shatter rods</label>
+        <products>
+            <LTS_6mmRodShatter>50</LTS_6mmRodShatter>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+            <Intellectual>5</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+    <!--9mm Standard Rod -->
+    <RecipeDef ParentName="LTS_RailgunBaseRecipe">
+        <defName>Make_9mmRailgunStandardRods</defName>
+        <label>make 9mm railgun standard rods</label>
+        <products>
+            <LTS_9mmRodStandard>50</LTS_9mmRodStandard>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+    <!--9mm Shatter Rod -->
+    <RecipeDef ParentName="LTS_RailgunBaseRecipe">
+        <defName>Make_9mmRailgunExplosiveRods</defName>
+        <label>make 9mm railgun explosive rods</label>
+        <products>
+            <LTS_9mmRodExplosive>50</LTS_9mmRodExplosive>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+            <Intellectual>6</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+    <!--6mm Standard Rod -->
+    <RecipeDef ParentName="LTS_RailgunBaseRecipe">
+        <defName>Make_12mmRailgunStandardRods</defName>
+        <label>make 12mm railgun standard rods</label>
+        <products>
+            <LTS_12mmRodStandard>50</LTS_12mmRodStandard>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+    <!--12mm Shatter Rod -->
+    <RecipeDef ParentName="LTS_RailgunBaseRecipe">
+        <defName>Make_12mmRailgunExplosiveRods</defName>
+        <label>make 12mm railgun explosive rods</label>
+        <products>
+            <LTS_12mmRodExplosive>50</LTS_12mmRodExplosive>
+        </products>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+            <Intellectual>6</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+</Defs>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--Short Arrows-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_ShortArrows</defName>
+        <ammoType>Primitive</ammoType>
+        <label>short arrows</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_ShortArrow</li>
+            <li>LTS_ShortFlameArrow</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Bow_Short</li>
+            <li>Flamebow</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+    <!--Recurve Arrows-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_RecurveArrows</defName>
+        <ammoType>Primitive</ammoType>
+        <label>recurve arrows</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_RecurveArrow</li>
+            <li>LTS_RecurveFlameArrow</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Bow_Recurve</li>
+            <li>BotchJob_AncientLongbow</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+    <!--Great Arrows-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_GreatArrows</defName>
+        <ammoType>Primitive</ammoType>
+        <label>great arrows</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_GreatArrow</li>
+            <li>LTS_GreatFlameArrow</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>Bow_Great</li>
+            <li>VWE_Bow_Long</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+    <!--Polymer Arrows-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_PolymerArrows</defName>
+        <ammoType>Industrial</ammoType>
+        <label>polymer arrows</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_PolymerBroadArrow</li>
+            <li>LTS_PolymerBulletpointArrow</li>
+            <li>LTS_PolymerIncendiaryArrow</li>
+            <li>LTS_PolymerEMPArrow</li>
+            <li>LTS_PolymerExplosiveArrow</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>LTS_Polymer_Bow</li>
+            <li>Bow_Compound</li>
+            <li>VWE_Bow_Compound</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+</Defs>

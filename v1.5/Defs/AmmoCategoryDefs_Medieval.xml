@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--Musket Ball-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_MusketBall</defName>
+        <ammoType>Medieval</ammoType>
+        <label>musket ball</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_MusketBallAmmo</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>LTS_RevolverMusket</li>
+            <li>LTS_QuadMusket</li>
+            <li>LTS_MusketRifle</li>
+            <li>LTS_RevolverMusket</li>
+            <li>LTS_InfantryMusket</li>
+            <li>VWE_Gun_Musket</li>
+            <li>VWE_Gun_Flintlock</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+
+    <!--Bolts-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_Bolts</defName>
+        <ammoType>Medieval</ammoType>
+        <label>bolts</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_RegularBolt</li>
+        </ammoDefs>
+        <includeWeaponDefs>
+            <li>VWE_Bow_Crossbow</li>
+            <li>LTS_Crossbow</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+    </Ammunition.Defs.AmmoCategoryDef>
+</Defs>

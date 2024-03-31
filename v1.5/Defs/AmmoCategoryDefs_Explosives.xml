@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--Grenade Launcher-->
+    <Ammunition.Defs.AmmoCategoryDef>
+        <defName>LTS_84mmRCL</defName>
+        <ammoType>Industrial</ammoType>
+        <label>84x245R RCL</label>
+        <autoAssignable>false</autoAssignable>
+        <ammoDefs>
+            <li>LTS_RCL441HE</li>
+            <li>LTS_RCL469SMK</li>
+            <li>LTS_RCL509ASM</li>
+            <li>LTS_RCLEMP</li>
+        </ammoDefs>
+        <weightList>
+            <li>3</li>
+            <li>1</li>
+        </weightList>
+        <includeWeaponDefs>
+            <li>LTS_grg</li>
+        </includeWeaponDefs>
+        <excludeWeaponDefs>
+        </excludeWeaponDefs>
+        <ammoWeight>10</ammoWeight>
+    </Ammunition.Defs.AmmoCategoryDef>
+</Defs>
+        <!--<li>LTS_RCL545FLR</li>-->
+        <!--<li>LTS_RCL751HEAT</li>-->

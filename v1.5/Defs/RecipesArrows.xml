@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--Arrow Base -->
+    <RecipeDef Name="LTS_ArrowBaseRecipe" Abstract="True">
+        <description>Make arrows for usage with various bows.</description>
+        <jobString>Making arrows.</jobString>
+        <workAmount>800</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+            <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Workbench</li>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>2</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+    <!--Arrow Short -->
+    <RecipeDef ParentName="LTS_ArrowBaseRecipe">
+        <defName>Make_ShortArrows</defName>
+        <label>make short arrows</label>
+        <products>
+            <LTS_ShortArrow>75</LTS_ShortArrow>
+        </products>
+    </RecipeDef>
+    <!--Arrow Recurve -->
+    <RecipeDef ParentName="LTS_ArrowBaseRecipe">
+        <defName>Make_RecurveArrows</defName>
+        <label>make recurve arrows</label>
+        <products>
+            <LTS_RecurveArrow>75</LTS_RecurveArrow>
+        </products>
+    </RecipeDef>
+    <!--Arrow Great -->
+    <RecipeDef ParentName="LTS_ArrowBaseRecipe">
+        <defName>Make_GreatArrows</defName>
+        <label>make great arrows</label>
+        <products>
+            <LTS_GreatArrow>75</LTS_GreatArrow>
+        </products>
+    </RecipeDef>
+
+    <!--Arrow Polymer -->
+    <RecipeDef Name="LTS_ArrowPolymerBaseRecipe" Abstract="True">
+        <description>Make polymer arrows for usage with various bows.</description>
+        <jobString>Making polymer arrows.</jobString>
+        <workAmount>1000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+        <researchPrerequisite>Machining</researchPrerequisite>
+    </RecipeDef>
+    <!--Arrow Broad Polymer -->
+    <RecipeDef ParentName="LTS_ArrowPolymerBaseRecipe">
+        <defName>Make_PolymerBroadArrows</defName>
+        <label>make polymer broad arrows</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <LTS_PolymerBroadArrow>75</LTS_PolymerBroadArrow>
+        </products>
+    </RecipeDef>
+    <!--Arrow Bulletpoint Polymer -->
+    <RecipeDef ParentName="LTS_ArrowPolymerBaseRecipe">
+        <defName>Make_PolymerBulletpointArrows</defName>
+        <label>make polymer bulletpoint arrows</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <LTS_PolymerBulletpointArrow>75</LTS_PolymerBulletpointArrow>
+        </products>
+    </RecipeDef>
+    <!--Arrow Incendiary Polymer -->
+    <RecipeDef ParentName="LTS_ArrowPolymerBaseRecipe">
+        <defName>Make_PolymerIncendiaryArrows</defName>
+        <label>make polymer incendiary arrows</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <LTS_PolymerIncendiaryArrow>75</LTS_PolymerIncendiaryArrow>
+        </products>
+    </RecipeDef>
+    <!--Arrow EMP Polymer -->
+    <RecipeDef ParentName="LTS_ArrowPolymerBaseRecipe">
+        <defName>Make_PolymerEMPArrows</defName>
+        <label>make polymer EMP arrows</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <LTS_PolymerEMPArrow>25</LTS_PolymerEMPArrow>
+        </products>
+    </RecipeDef>
+    <!--Arrow Explosive Polymer -->
+    <RecipeDef ParentName="LTS_ArrowPolymerBaseRecipe">
+        <defName>Make_PolymerExplosiveArrows</defName>
+        <label>make polymer explosive arrows</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <LTS_PolymerExplosiveArrow>25</LTS_PolymerExplosiveArrow>
+        </products>
+    </RecipeDef>
+</Defs>

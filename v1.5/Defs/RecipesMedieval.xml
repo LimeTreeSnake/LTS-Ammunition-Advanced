@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--Bolt -->
+    <RecipeDef>
+        <defName>Make_RegularBolt</defName>
+        <label>make bolts</label>
+        <description>Make bolts that go pew.</description>
+        <jobString>Making bolts.</jobString>
+        <workAmount>1000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+            <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Workbench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                <li>WoodLog</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <LTS_RegularBolt>75</LTS_RegularBolt>
+        </products>
+    </RecipeDef>
+    <!--Musket -->
+    <RecipeDef>
+        <defName>Make_MusketBalls</defName>
+        <label>make musket balls</label>
+        <description>Make musket balls that go pew.</description>
+        <jobString>Making musket balls.</jobString>
+        <workAmount>1000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+            <li>LTS_AmmunitionBench</li>
+            <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Workbench</li>
+        </recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="Argon.VMEu">VMEu_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <LTS_MusketBallAmmo>100</LTS_MusketBallAmmo>
+        </products>
+    </RecipeDef>
+</Defs>
